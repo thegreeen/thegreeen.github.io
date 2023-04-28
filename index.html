@@ -5,6 +5,13 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function redirectToPaulBunde() {
+        if (confirm("You will be redirected to https://paulbunde.com")) {
+          window.location.href = "https://paulbunde.com";
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="page-header">
@@ -21,6 +28,7 @@
     <main class="page-content">
       <h2>Home</h2>
       <p>Welcome to the code page.</p>
+      <button onclick="redirectToPaulBunde()">Redirect to PaulBunde.com</button>
     </main>
     <footer>
       <p>&copy; 2023</p>
