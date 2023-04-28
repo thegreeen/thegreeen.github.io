@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
       function redirectToPaulBunde() {
-        if (confirm("You will be redirected to paulbunde.com")) {
+        // Use the alert function to display a message to the user
+        alert("You will be redirected to paulbunde.com");
+        // Use the setTimeout function to delay the call to window.location.href by 2 seconds
+        setTimeout(function() {
           window.location.href = "https://paulbunde.com";
-        }
+        }, 2000);
       }
       // Use the setTimeout function to delay the call to redirectToPaulBunde by 2 seconds
       setTimeout(function() {
