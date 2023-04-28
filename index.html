@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
       function redirectToPaulBunde() {
-        if (confirm("You will be redirected to https://paulbunde.com")) {
+        if (confirm("You will be redirected to paulbunde.com")) {
           window.location.href = "https://paulbunde.com";
         }
       }
-      
-      redirectToPaulBunde(); // Call the function automatically when the page loads
+      // Use the setTimeout function to delay the call to redirectToPaulBunde by 2 seconds
+      setTimeout(function() {
+        redirectToPaulBunde();
+      }, 2000);
     </script>
   </head>
   <body>
